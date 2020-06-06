@@ -19,6 +19,7 @@ export default createLayoutsWidget('right-custom-html-two', {
       }
 
       scheduleOnce('afterRender', this, function() {
+        $("div.right-custom-html-two").html('');
         $("div.right-custom-html-two").append(`<div class='contents'>${html}</div>`);
       });
       //state.renderScheduled = true;
